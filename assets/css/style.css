@@ -1,22 +1,37 @@
+:root {
+    --header-background-color: black;
+    --name-background-color: hotpink;
+    --hover: aqua;
+    --flexbox-background: grey;
+}
+
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url(../images/jaguar-flipped.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: black;
-    width: 100%;
+    background-color: var(--header-background-color);
     align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
     margin-top: -20px;
     margin-left: -10px;
     margin-right: -20px;
 }
 
 header h1 {
-    color: black;
+    color: var(--header-background-color);
     font-size: 48px;
-    background-color: hotpink;
+    background-color: var(--name-background-color);
     padding: 10px;
     padding-left: 20px;
     padding-right: 50px;
@@ -25,7 +40,7 @@ header h1 {
 }
 
 header nav li { 
-    color: hotpink;
+    color: var(--name-background-color);
     display: inline; 
     font-size: 1.75rem;
     justify-content: space-between;
@@ -33,74 +48,267 @@ header nav li {
 }
 
 #nav a {
-    color: hotpink;
+    color: var(--name-background-color);
 }
 
 #nav a:hover {
-    color: aqua;
+    color: var(--flexbox-background);
     text-decoration: underline;
 }
 
-.tiger-original img {
-    width: 1300px;
-    height: 800px;
-    margin-left: -10px;
-    margin-bottom: 10px;
-}
-
 #about-me {
-color: black;
+color: var(--header-background-color);
 font-size: 2.5rem;
 text-align: right;
-display: block;
 float: left;
-margin-left: 200px;
+margin-left: 150px;
+margin-top: -70px;
 }
 
 #about-me .verticalline {
-    border-right: 6px solid hotpink;
-    height: 200px;
+    border-right: 6px solid var(--name-background-color);
+    height: 150px;
     padding: 10px;
     position: relative;
+    margin-top: 50px;
 }
 
 h1 {
-    margin-top: 26px;
+    margin-top: 5px;
 }
 
 p {
-    color: black;
-    margin-left: 450px;
-    max-width: 1200px;
+    color: var(--header-background-color);
+    margin-left: 400px;
+    max-width: 1100px;
+    margin-top: 50px;
 }
 
 #work {
     font-size: 2.5rem;
     float: left;
-    display: block;
-    margin-top: 150px;
+    margin-top: 70px;
     margin-left: -170px;
 }
 
 #work .verticalline {
-    border-right: 6px solid hotpink;
-    height: 150px;
+    border-right: 6px solid var(--name-background-color);
+    height: 550px;
     padding: 10px;
     position: relative;
 }
 
+.surf-report {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 3px solid var(--name-background-color);
+    margin-top: 90px;
+    margin-left: 400px;
+    background-color: var(--flexbox-background);
+    max-width: 1223px;
+    background-image: url(../images/white-rhino.jpg);
+    background-size: 1200px;
+    background-position: 10px -450px;
+    background-repeat: repeat;
+}
+
+.surf-report:hover {
+    opacity: 75%;
+}
+
+.surf-report h2 {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.surf-report p {
+    background-color: var(--name-background-color);
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 235px;
+    margin-left: -150px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 57px;
+}
+
+.led-wall {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 3px solid var(--name-background-color);
+    margin-top: 20px;
+    margin-left: 400px;
+    background-color: var(--flexbox-background);
+    max-width: 600px;
+    height: 110px;
+    background-image: url(../images/red-flower.jpg);
+    background-size: 600px;
+    background-position: 130px;
+}
+
+.led-wall:hover {
+    opacity: 75%;
+}
+
+.led-wall h2 {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.led-wall p {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 80px;
+    margin-left: -118px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 40px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 3px solid var(--name-background-color);
+    margin-top: -116px;
+    margin-left: 1020px;
+    background-color: var(--flexbox-background);
+    max-width: 600px;
+    height: 110px;
+    background-image: url(../images/green-snake.jpg);
+    background-size: 600px;
+    background-position: 40px;
+}
+
+.calculator:hover {
+    opacity: 75%;
+}
+
+.calculator h2 {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 45px;
+    padding-left: 25px;
+    padding-right: 40px;
+    white-space: nowrap;
+}
+
+.calculator p {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 75px;
+    margin-left: -180px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 14px;
+}
+
+.pastel-puzzles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 3px solid var(--name-background-color);
+    margin-top: 20px;
+    margin-left: 400px;
+    background-color: var(--flexbox-background);
+    max-width: 600px;
+    height: 110px;
+    background-image: url(../images/purple-flower.jpg);
+    background-size: 650px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+
+.pastel-puzzles:hover {
+    opacity: 75%;
+}
+
+.pastel-puzzles h2 {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 47px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.pastel-puzzles p {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 80px;
+    margin-left: -180px;
+    padding-bottom: 5px;
+    padding-left: 11px;
+    padding-right: 87px;
+}
+
+.run-buddy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    border: 3px solid var(--name-background-color);
+    margin-top: -116px;
+    margin-left: 1020px;
+    background-color: var(--flexbox-background);
+    max-width: 600px;
+    height: 110px;
+    background-image: url(../images/clouded-leopard.jpg);
+    background-size: 600px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+
+.run-buddy:hover {
+    opacity: 75%;
+}
+
+.run-buddy h2 {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.run-buddy p {
+    background-color: var(--name-background-color);
+    text-align: left;
+    margin-top: 75px;
+    margin-left: -140px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 57px;
+}
+
+
 .contact-details ul {
     font-size: small;
-    color: black;
+    color: var(--header-background-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-decoration: underline hotpink;
+    text-decoration: underline var(--name-background-color);
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
-    margin-left: 550px;
-    margin-top: 500px;
-    max-width: 1200px;
+    margin-left: 400px;
+    margin-top: 130px;
+    max-width: 1000px;
 }
 
 ul {
@@ -109,17 +317,17 @@ ul {
 
 #contact-me {
     color: black;
-    display: block;
     font-size: 1.75rem;
     text-align: right;
     float: left;
-    margin-top: 400px;
-    margin-left: -230px;
+    margin-top: 80px;
+    margin-left: -227px;
 }
 
 #contact-me .verticalline {
-    border-right: 6px solid hotpink;
-    height: 100px;
+    border-right: 6px solid var(--name-background-color);
+    height: 170px;
     padding: 10px;
     position: relative;
+    margin-bottom: 20px;
 }
