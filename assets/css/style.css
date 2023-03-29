@@ -12,6 +12,7 @@
 body {
     background-image: url(../images/jaguar-flipped.jpg);
     height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,12 +22,13 @@ header {
     justify-content: space-between;
     background-color: var(--header-background-color);
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    margin-top: -20px;
-    margin-left: -10px;
-    margin-right: -20px;
-    white-space: nowrap;
+    /* padding-top: 40px santi */
+    /* padding-bottom: 10px santi */
+    /* margin-top: -20px santi */
+    /* margin-left: -10px santi */
+    /* margin-right: -20px santi */
+    padding: 10px 0 10px 0;
+    /* white-space: nowrap; santi */
 }
 
 header h1 {
@@ -58,19 +60,23 @@ header nav li {
     cursor: pointer;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+}
+
 .banner {
     width: 100%;
     padding-bottom: 30px;
-    margin-left: -100;
-    max-width: fit-content;
+    /* margin-left: -100; santi */
+    /* max-width: fit-content; santi */
 }
 
 .banner img {
     height: 350px;
-    width: 2555px;
-    margin-left: -10px;
-    margin-right: 30px;
-    white-space: nowrap;
+    width: 100%;
+    /* margin-left: -10px;
+    margin-right: 30px;  santi*/
 }
 
 .my-picture img {
@@ -85,53 +91,51 @@ header nav li {
 #about-me {
 color: var(--header-background-color);
 font-size: 2.5rem;
-text-align: right;
-float: left;
-margin-left: 150px;
-margin-top: -70px;
+display: flex;
 }
 
 #about-me .verticalline {
     border-right: 6px solid var(--name-background-color);
     height: 150px;
     padding: 10px;
-    position: relative;
+    position: absolute;
     margin-top: 50px;
 }
 
-h1 {
-    margin-top: 5px;
-}
-
-p {
+#about-me p {
     color: var(--header-background-color);
-    margin-left: 400px;
+    margin-left: 250px;
     max-width: 1100px;
     margin-top: 30px;
+    font-size: 1rem;
 }
 
 #work {
     font-size: 2.5rem;
-    float: left;
-    margin-top: 70px;
-    margin-left: -170px;
+    display: flex;
+    margin-top: 150px;
 }
 
 #work .verticalline {
     border-right: 6px solid var(--name-background-color);
     height: 550px;
     padding: 10px;
-    position: relative;
+    position: absolute;
 }
 
-.surf-report {
+.big-pic {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    padding: 10px;
+}
+
+.surf-report {
+    flex: 1 0 200px;
     border: 3px solid var(--name-background-color);
-    margin-top: 90px;
-    margin-left: 400px;
+    margin-left: 200px;
+    padding-bottom: 10px;
+    padding-right: 900px;
     background-color: var(--flexbox-background);
     max-width: 1223px;
     background-image: url(../images/white-rhino.jpg);
@@ -151,28 +155,24 @@ p {
     margin-top: 200px;
     padding-left: 10px;
     padding-right: 10px;
-    white-space: nowrap;
 }
 
 .surf-report p {
     background-color: var(--name-background-color);
-    text-align: left;
-    white-space: nowrap;
-    margin-top: 235px;
-    margin-left: -150px;
-    padding-bottom: 5px;
-    padding-left: 11px;
-    padding-right: 57px;
+    font-size: 1.5rem;
+    padding-left: 10px;
 }
 
-.led-wall {
+.small-pics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+}
+
+.led-wall {
+    flex: 1 0 550px;
     border: 3px solid var(--name-background-color);
-    margin-top: 20px;
-    margin-left: 400px;
+    margin-left: 200px;
     background-color: var(--flexbox-background);
     max-width: 600px;
     height: 110px;
@@ -180,6 +180,7 @@ p {
     background-size: 600px;
     background-position: 100px;
     cursor: pointer;
+    padding-bottom: 15px;
 }
 
 .led-wall:hover {
@@ -191,35 +192,29 @@ p {
     text-align: left;
     margin-top: 50px;
     padding-left: 10px;
-    padding-right: 10px;
-    white-space: nowrap;
+    max-width: 30%;
 }
 
 .led-wall p {
     background-color: var(--name-background-color);
-    text-align: left;
-    margin-top: 80px;
-    margin-left: -118px;
     padding-bottom: 5px;
     padding-left: 11px;
-    padding-right: 40px;
+    font-size: 1.5rem;
+    max-width: 30%;
 }
 
 .calculator {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex: 1 0 550px;
     border: 3px solid var(--name-background-color);
-    margin-top: -116px;
-    margin-left: 1020px;
+    /* margin-left: 1020px; santi*/
     background-color: var(--flexbox-background);
     max-width: 600px;
     height: 110px;
     background-image: url(../images/green-snake.jpg);
     background-size: 600px;
-    background-position: 5px;
+    background-position: 35px;
     cursor: pointer;
+    padding-bottom: 35px;
 }
 
 .calculator:hover {
@@ -228,31 +223,26 @@ p {
 
 .calculator h2 {
     background-color: var(--name-background-color);
-    text-align: left;
-    margin-top: 45px;
-    padding-left: 25px;
-    padding-right: 40px;
-    white-space: nowrap;
+    padding-left: 10px;
+    margin-top: 50px;
+    max-width: 45%;
+    /* white-space: nowrap; santi*/
 }
 
 .calculator p {
     background-color: var(--name-background-color);
     text-align: left;
-    margin-top: 75px;
-    margin-left: -180px;
+    /* margin-left: -180px; santi */
     padding-bottom: 5px;
     padding-left: 10px;
-    padding-right: 14px;
+    font-size: 1.5rem;
+    max-width: 45%;
 }
 
 .pastel-puzzles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex: 1 0 550px;
     border: 3px solid var(--name-background-color);
-    margin-top: 20px;
-    margin-left: 400px;
+    margin-left: 200px;
     background-color: var(--flexbox-background);
     max-width: 600px;
     height: 110px;
@@ -261,6 +251,7 @@ p {
     background-position: 0px;
     background-repeat: no-repeat;
     cursor: pointer;
+    padding-bottom: 15px;
 }
 
 .pastel-puzzles:hover {
@@ -269,31 +260,24 @@ p {
 
 .pastel-puzzles h2 {
     background-color: var(--name-background-color);
-    text-align: left;
-    margin-top: 47px;
     padding-left: 10px;
     padding-right: 10px;
-    white-space: nowrap;
+    margin-top: 50px;
+    max-width: 45%;
 }
 
 .pastel-puzzles p {
     background-color: var(--name-background-color);
-    text-align: left;
-    margin-top: 80px;
-    margin-left: -180px;
     padding-bottom: 5px;
     padding-left: 11px;
-    padding-right: 87px;
+    font-size: 1.5rem;
+    max-width: 46%;
 }
 
 .run-buddy {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex: 1 0 550px;
     border: 3px solid var(--name-background-color);
-    margin-top: -116px;
-    margin-left: 1020px;
+    /* margin-left: 1020px; santi */
     background-color: var(--flexbox-background);
     max-width: 600px;
     height: 110px;
@@ -302,6 +286,7 @@ p {
     background-position: 0px;
     background-repeat: no-repeat;
     cursor: pointer;
+    padding-bottom: 15px;
 }
 
 .run-buddy:hover {
@@ -310,30 +295,38 @@ p {
 
 .run-buddy h2 {
     background-color: var(--name-background-color);
-    text-align: left;
-    margin-top: 40px;
     padding-left: 10px;
-    padding-right: 10px;
-    white-space: nowrap;
+    margin-top: 50px;
+    max-width: 35%;
 }
 
 .run-buddy p {
     background-color: var(--name-background-color);
-    text-align: left;
-    margin-top: 75px;
-    margin-left: -140px;
     padding-bottom: 5px;
     padding-left: 10px;
-    padding-right: 57px;
+    font-size: 1.5rem;
+    max-width: 35%;
 }
 
+#contact-me {
+    color: var(--header-background-color);
+    font-size: 2.5rem;
+    display: flex;
+    margin-top: 100px;
+}
+
+#contact-me .verticalline {
+    border-right: 6px solid var(--name-background-color);
+    height: 170px;
+    padding: 10px;
+    position: absolute;
+}
 
 .contact-details ul {
     font-size: small;
     color: var(--header-background-color);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     text-decoration: underline var(--name-background-color);
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
@@ -342,23 +335,6 @@ p {
     max-width: 1000px;
 }
 
-ul {
+/* ul {
     list-style-type: none;
-}
-
-#contact-me {
-    color: black;
-    font-size: 1.75rem;
-    text-align: right;
-    float: left;
-    margin-top: 80px;
-    margin-left: -227px;
-}
-
-#contact-me .verticalline {
-    border-right: 6px solid var(--name-background-color);
-    height: 170px;
-    padding: 10px;
-    position: relative;
-    margin-bottom: 20px;
-}
+} */
