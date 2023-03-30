@@ -123,21 +123,25 @@ display: flex;
     position: absolute;
 }
 
+a {
+    text-decoration: none;
+}
+
 .big-pic {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
+    color: var(--header-background-color);
 }
 
 .surf-report {
     flex: 1 0 200px;
     border: 3px solid var(--name-background-color);
-    margin-left: 200px;
+    margin-left: 190px;
     padding-bottom: 10px;
-    padding-right: 900px;
+    /* padding-right: 900px; */
     background-color: var(--flexbox-background);
-    max-width: 1223px;
+    max-width: 1200px;
     background-image: url(../images/white-rhino.jpg);
     background-size: 1250px;
     background-position: 1px -460px;
@@ -147,6 +151,11 @@ display: flex;
 
 .surf-report:hover {
     opacity: 75%;
+}
+
+.surf-report-banner {
+    width: 25%;
+    background-color: var(--name-background-color);
 }
 
 .surf-report h2 {
@@ -165,8 +174,8 @@ display: flex;
 
 .small-pics {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    color: var(--header-background-color);
 }
 
 .led-wall {
@@ -187,20 +196,21 @@ display: flex;
     opacity: 75%;
 }
 
-.led-wall h2 {
+.led-banner {
+    width: 35%;
     background-color: var(--name-background-color);
+}
+
+.led-wall h2 {
     text-align: left;
     margin-top: 50px;
     padding-left: 10px;
-    max-width: 30%;
 }
 
 .led-wall p {
-    background-color: var(--name-background-color);
     padding-bottom: 5px;
     padding-left: 11px;
     font-size: 1.5rem;
-    max-width: 30%;
 }
 
 .calculator {
@@ -221,22 +231,23 @@ display: flex;
     opacity: 75%;
 }
 
-.calculator h2 {
+.calculator-banner {
+    width: 45%;
     background-color: var(--name-background-color);
+}
+
+.calculator h2 {
     padding-left: 10px;
-    margin-top: 50px;
-    max-width: 45%;
+    margin-top: 70px;
     /* white-space: nowrap; santi*/
 }
 
 .calculator p {
-    background-color: var(--name-background-color);
     text-align: left;
     /* margin-left: -180px; santi */
     padding-bottom: 5px;
     padding-left: 10px;
     font-size: 1.5rem;
-    max-width: 45%;
 }
 
 .pastel-puzzles {
@@ -258,12 +269,15 @@ display: flex;
     opacity: 75%;
 }
 
+.pastel-banner {
+    width: 50%;
+    background-color: var(--name-background-color);
+}
+
 .pastel-puzzles h2 {
     background-color: var(--name-background-color);
     padding-left: 10px;
-    padding-right: 10px;
     margin-top: 50px;
-    max-width: 45%;
 }
 
 .pastel-puzzles p {
@@ -271,7 +285,6 @@ display: flex;
     padding-bottom: 5px;
     padding-left: 11px;
     font-size: 1.5rem;
-    max-width: 46%;
 }
 
 .run-buddy {
@@ -293,11 +306,15 @@ display: flex;
     opacity: 75%;
 }
 
+.run-banner {
+    width: 40%;
+    background-color: var(--name-background-color);
+}
+
 .run-buddy h2 {
     background-color: var(--name-background-color);
     padding-left: 10px;
     margin-top: 50px;
-    max-width: 35%;
 }
 
 .run-buddy p {
@@ -305,7 +322,6 @@ display: flex;
     padding-bottom: 5px;
     padding-left: 10px;
     font-size: 1.5rem;
-    max-width: 35%;
 }
 
 #contact-me {
@@ -322,19 +338,25 @@ display: flex;
     position: absolute;
 }
 
-.contact-details ul {
-    font-size: small;
+.contact-details {
+    font-size: 1rem;
     color: var(--header-background-color);
-    display: flex;
-    justify-content: space-evenly;
     text-decoration: underline var(--name-background-color);
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
-    margin-left: 400px;
-    margin-top: 130px;
-    max-width: 1000px;
+    min-width: 75vw;
+    margin-left: 300px;
+    margin-top: 150px;
 }
 
-/* ul {
-    list-style-type: none;
-} */
+.contact-details ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+}
+}
