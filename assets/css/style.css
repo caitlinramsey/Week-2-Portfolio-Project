@@ -145,7 +145,7 @@ a {
 }
 
 .zooquarium-banner {
-    width: 35%;
+    width: 25%;
     background-color: var(--name-background-color);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
@@ -165,19 +165,23 @@ a {
     padding-left: 10px;
 }
 
+#second-line {
+    display: block;
+    margin-bottom: 1rem;
+}
+
 .small-pics {
     display: flex;
     flex-wrap: wrap;
-    color: var(--header-background-color);
     gap: 10px
 }
 
-.led-wall {
-    flex: 1 0 550px;
+.weather-forecast {
+    color: var(--header-background-color);
     border: 3px solid var(--name-background-color);
     margin-left: 200px;
     background-color: var(--flexbox-background);
-    max-width: 600px;
+    width: 550px;
     height: 130px;
     background-image: url(../images/red-flower.jpg);
     background-size: 600px;
@@ -185,32 +189,32 @@ a {
     cursor: pointer;
 }
 
-.led-wall:hover {
+.weather-forecast:hover {
     opacity: 75%;
 }
 
-.led-banner {
-    width: 35%;
+.weather-forecast-banner {
+    width: 70%;
     background-color: var(--name-background-color);
 }
 
-.led-wall h2 {
+.weather-forecast h2 {
     text-align: left;
     margin-top: 50px;
     padding-left: 10px;
 }
 
-.led-wall p {
+.weather-forecast p {
     padding-bottom: 5px;
     padding-left: 11px;
     font-size: 1.5rem;
 }
 
-.calculator {
-    flex: 1 0 550px;
+.password-generator {
     border: 3px solid var(--name-background-color);
+    color: var(--header-background-color);
     background-color: var(--flexbox-background);
-    max-width: 600px;
+    width: 550px;
     height: 130px;
     background-image: url(../images/green-snake.jpg);
     background-size: 600px;
@@ -218,33 +222,37 @@ a {
     cursor: pointer;
 }
 
-.calculator:hover {
+.password-generator:hover {
     opacity: 75%;
 }
 
-.calculator-banner {
-    width: 45%;
+.password-generator-banner {
+    width: 70%;
     background-color: var(--name-background-color);
 }
 
-.calculator h2 {
+.password-generator h2 {
     padding-left: 10px;
     margin-top: 50px;
 }
 
-.calculator p {
+.password-generator p {
     text-align: left;
     padding-bottom: 5px;
     padding-left: 10px;
     font-size: 1.5rem;
 }
 
-.pastel-puzzles {
-    flex: 1 0 550px;
+#third-line {
+    display: flex;
+}
+
+.prework-study-guide {
     border: 3px solid var(--name-background-color);
+    color: var(--header-background-color);
     margin-left: 200px;
     background-color: var(--flexbox-background);
-    max-width: 600px;
+    width: 550px;
     height: 130px;
     background-image: url(../images/purple-flower.jpg);
     background-size: 650px;
@@ -253,33 +261,33 @@ a {
     cursor: pointer;
 }
 
-.pastel-puzzles:hover {
+.prework-study-guide:hover {
     opacity: 75%;
 }
 
-.pastel-banner {
-    width: 50%;
+.prework-study-guide-banner {
+    width: 80%;
     background-color: var(--name-background-color);
 }
 
-.pastel-puzzles h2 {
+.prework-study-guide h2 {
     background-color: var(--name-background-color);
     padding-left: 10px;
     margin-top: 50px;
 }
 
-.pastel-puzzles p {
+.prework-study-guide p {
     background-color: var(--name-background-color);
     padding-bottom: 5px;
     padding-left: 11px;
     font-size: 1.5rem;
 }
 
-.run-buddy {
-    flex: 1 0 550px;
+.personal-website {
     border: 3px solid var(--name-background-color);
+    color: var(--header-background-color);
     background-color: var(--flexbox-background);
-    max-width: 600px;
+    width: 550px;
     height: 130px;
     background-image: url(../images/clouded-leopard.jpg);
     background-size: 600px;
@@ -288,22 +296,22 @@ a {
     cursor: pointer;
 }
 
-.run-buddy:hover {
+.personal-website:hover {
     opacity: 75%;
 }
 
-.run-banner {
-    width: 40%;
+.personal-website-banner {
+    width: 70%;
     background-color: var(--name-background-color);
 }
 
-.run-buddy h2 {
+.personal-website h2 {
     background-color: var(--name-background-color);
     padding-left: 10px;
     margin-top: 50px;
 }
 
-.run-buddy p {
+.personal-website p {
     background-color: var(--name-background-color);
     padding-bottom: 5px;
     padding-left: 10px;
