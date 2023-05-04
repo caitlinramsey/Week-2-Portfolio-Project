@@ -127,7 +127,7 @@ a {
     padding-bottom: 10px;
 }
 
-.surf-report {
+.zooquarium {
     flex: 1 0 200px;
     border: 3px solid var(--name-background-color);
     margin-left: 200px;
@@ -140,16 +140,18 @@ a {
     cursor: pointer;
 }
 
-.surf-report:hover {
+.zooquarium:hover {
     opacity: 75%;
 }
 
-.surf-report-banner {
-    width: 25%;
+.zooquarium-banner {
+    width: 35%;
     background-color: var(--name-background-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-.surf-report h2 {
+.zooquarium h2 {
     background-color: var(--name-background-color);
     text-align: left;
     margin-top: 200px;
@@ -157,7 +159,7 @@ a {
     padding-right: 10px;
 }
 
-.surf-report p {
+.zooquarium p {
     background-color: var(--name-background-color);
     font-size: 1.5rem;
     padding-left: 10px;
