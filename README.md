@@ -8,3 +8,6 @@ I personalized it with the colors, font, and pictures that I wanted in order to 
 ## Mockup
 ![portfolio-project-1](https://user-images.githubusercontent.com/60635509/228982461-a3c400be-fd04-4db1-93b7-9d75d49deca7.png)
 ![portfolio-project-2](https://user-images.githubusercontent.com/60635509/228982478-090eb92d-46fc-45d1-a86c-f562a14ad069.png)
+
+## Deployed Application
+https://caitlinramsey.github.io/cr-design-portfolio-project/
