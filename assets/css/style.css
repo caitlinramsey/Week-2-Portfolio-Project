@@ -104,7 +104,7 @@ margin-left: 70px;
 
 #work {
     font-size: 2.5rem;
-    /* display: flex; */
+    display: flex;
     margin-top: 130px;
     margin-left: 150px;
 }
@@ -132,7 +132,7 @@ a {
     border: 3px solid var(--name-background-color);
     margin-left: 200px;
     background-color: var(--flexbox-background);
-    max-width: 1200px;
+    max-width: 1115px;
     background-image: url(../images/white-rhino.jpg);
     background-size: 1250px;
     background-position: 1px -460px;
@@ -347,14 +347,108 @@ a {
     padding-bottom: 20px;
 }
 
-media screen and (max-width: 1230) {
-    .small-pics {
-        flex-direction: column
+@media screen and (max-width: 1440px) {
+
+    #work .verticalline {
+        height: 900px;
+        padding: 10px;
+        position: absolute;
+    }
+
+    .big-pic {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        color: var(--header-background-color);
+        padding-bottom: 10px;
+    }
+
+    .zooquarium {
+        background-size: 600px;
+        background-position: 0px;
+        background-repeat: no-repeat;
+    }
+
+    .zooquarium-banner {
+        width: 50%;
+    }
+
+    .second-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .password-generator {
+        margin-left: 200px;
+    }
+
+    #third-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personal-website {
+        margin-left: 200px;
     }
 }
 
-media screen and (max-width: 768px) {
-    .small-pics {
-        flex-direction: column
+@media screen and (max-width: 1024px) {
+
+    header nav li { 
+        display: flex;
+    }
+
+    #work .verticalline {
+        height: 900px;
+        padding: 10px;
+        position: absolute;
+    }
+
+    .big-pic {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        color: var(--header-background-color);
+        padding-bottom: 10px;
+    }
+
+    .zooquarium {
+        background-size: 600px;
+        background-position: 0px;
+        background-repeat: no-repeat;
+    }
+
+    .zooquarium-banner {
+        width: 50%;
+    }
+
+    .second-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .password-generator {
+        margin-left: 200px;
+    }
+
+    #third-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personal-website {
+        margin-left: 200px;
+    }
+
+    #contact-me {
+        display: block;
+        max-width: fit-content;
+    }
+
+    .contact-details ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
 }
