@@ -345,6 +345,11 @@ a {
     padding-bottom: 20px;
 }
 
+.contact-details ul a {
+    text-decoration: none;
+    color: var(--header-background-color);
+}
+
 @media screen and (max-width: 1440px) {
 
     #work .verticalline {
