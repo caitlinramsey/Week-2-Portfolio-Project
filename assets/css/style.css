@@ -31,9 +31,7 @@ header h1 {
     font-size: 48px;
     background-color: var(--name-background-color);
     padding: 10px;
-    padding-left: 20px;
     padding-right: 50px;
-    text-indent: 190px;
     text-align: right;
 }
 
@@ -398,6 +396,10 @@ a {
         display: flex;
     }
 
+    #about-me p {
+        padding-right: 10px;
+    }
+
     #work .verticalline {
         height: 900px;
         padding: 10px;
@@ -443,6 +445,132 @@ a {
     #contact-me {
         display: block;
         max-width: fit-content;
+    }
+
+    .contact-details {
+        min-width: 50vw;
+    }
+
+    .contact-details ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        text-align: center;
+        margin-bottom: .5rem;
+    }
+    
+    header nav li { 
+        display: inline; 
+        margin-left: 1.5rem;
+    }
+    
+    #nav a {
+        color: var(--name-background-color);
+    }
+
+    header {
+        display: block;
+    }
+
+    #about-me {
+        display: flex;
+        margin-left: 10px;
+        }
+
+    #about-me p {
+        padding-right: 10px;
+    }
+
+    #work {
+        margin-left: 90px;
+    }
+
+    #work .verticalline {
+        height: 900px;
+        padding: 10px;
+        position: absolute;
+    }
+
+    .big-pic {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 655px;
+        color: var(--header-background-color);
+        padding-bottom: 10px;
+    }
+
+    .zooquarium {
+        background-size: 600px;
+        background-position: 0px;
+        background-repeat: no-repeat;
+    }
+
+    .zooquarium-banner {
+        width: 55%;
+    }
+
+    .second-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather-forecast {
+        max-width: 450px;
+    }
+
+    .weather-forecast-banner {
+        width: 80%;
+    }
+
+    .password-generator {
+        margin-left: 200px;
+        max-width: 450px;
+    }
+
+    .password-generator-banner {
+        width: 90%;
+    }
+
+    #third-line {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prework-study-guide {
+        max-width: 450px;
+    }
+
+    .prework-study-guide-banner {
+        width: 90%;
+    }
+
+    .personal-website {
+        margin-left: 200px;
+        max-width: 450px;
+    }
+
+    .personal-website-banner {
+        width: 80%;
+    }
+
+    #contact-me {
+        display: flex;
+        margin-left: -25px;
+    }
+
+    .contact {
+        word-wrap: break-word;
+    }
+
+    .contact-details {
+        min-width: 50vw;
     }
 
     .contact-details ul{
